@@ -11,12 +11,6 @@
 
 # maven
 /target
-/IQShopClient/target
-/IQShopInfrastructure/target
-/IQShopServer/target
-/IQShopRxJava/target
-/IQShopLicense/target
-iqshop-codegen-maven-plugin/target/
 
 # vim
 .*.sw[a-p]

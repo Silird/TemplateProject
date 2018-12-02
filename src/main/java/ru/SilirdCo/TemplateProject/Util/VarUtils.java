@@ -30,6 +30,13 @@ public class VarUtils {
         return f;
     }
 
+    public static double getDouble(Double d) {
+        if (d == null) {
+            return 0D;
+        }
+        return d;
+    }
+
     public static String getString(String str) {
         if (str == null) {
             return "";
@@ -37,7 +44,7 @@ public class VarUtils {
         return str;
     }
 
-    public static float roundFloat(Float f) {
+    public static float round(Float f) {
         if (f == null) {
             return 0F;
         }
@@ -48,11 +55,33 @@ public class VarUtils {
         return result;
     }
 
-    public static float roundMinFloat(Float f) {
+    public static float roundMin(Float f) {
         if (f == null) {
             return 0F;
         }
         float result = f;
+        result = result*100;
+        result = (float) Math.floor(result);
+        result = result/100;
+        return result;
+    }
+
+    public static double round(Double d) {
+        if (d == null) {
+            return 0F;
+        }
+        double result = d;
+        result = result*100;
+        result = (float) Math.round(result);
+        result = result/100;
+        return result;
+    }
+
+    public static double roundMin(Double d) {
+        if (d == null) {
+            return 0F;
+        }
+        double result = d;
         result = result*100;
         result = (float) Math.floor(result);
         result = result/100;
