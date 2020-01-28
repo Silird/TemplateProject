@@ -1,4 +1,4 @@
-package ru.SilirdCo.TemplateProject.Util;
+package ru.silirdco.templateproject.util;
 
 import org.slf4j.Logger;
 
